@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 20% 97%;
+    --foreground: 0 0% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 16%;
+    --primary: 348 35% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 30 20% 97%;
+    --secondary-foreground: 0 0% 16%;
+    --muted: 30 15% 94%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 18 70% 70%;
+    --accent-foreground: 0 0% 16%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 15 25% 78%;
+    --input: 15 25% 78%;
+    --ring: 348 35% 55%;
+    --radius: 0.625rem;
+    --sidebar-background: 30 20% 97%;
+    --sidebar-foreground: 0 0% 16%;
+    --sidebar-primary: 348 35% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 15% 94%;
+    --sidebar-accent-foreground: 0 0% 16%;
+    --sidebar-border: 15 25% 78%;
+    --sidebar-ring: 348 35% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-stone text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
